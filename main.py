@@ -15,7 +15,6 @@ YA_TOKEN = os.getenv('YA_TOKEN')
 
 
 class HttpException(Exception):
-    """Класс исключения, выбрасываем, когда API возвращает ошибку"""
 
     def __init__(self, status, message=''):
         self.status = status
